@@ -11,6 +11,24 @@
   </head>
 
   <body>
+    <form class="site-header">
+      <h1>Войдите</h1>
+      <div class="field">
+        <label for="uname"><b>Username</b></label>
+        <div><input type="text" placeholder="Email" name="uname" required /></div>
+    </div>
+    <div class="field"></div>
+      <label for="psw"><b>Password</b></label>
+      <div><input
+        type="password"
+        id="psw"
+        name="psw"
+        pattern="(?=.*\d)(?=.*[a-zа-яё])(?=.*[A-ZА-ЯЁ])(?=.*[0-9])(?=.*[~!@#$%^&*_|?]).{6,25}"
+        placeholder="Password"
+        required
+      /></div>
+    </div>
+    </form>
     <div class="bgImage"></div>
     <svg class="blobCont">
       <image

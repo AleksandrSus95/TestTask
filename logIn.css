@@ -1,3 +1,16 @@
+.site-header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -100px; /* отступы равны половинным размера формы */
+        z-index: 9999;             /* чтобы форма была поверх всех элементов страницы */
+}
+h1 {
+
+}
+.site-header p{
+    
+}
 body, .bgImage {
   margin: 0;
   height: 100%;
