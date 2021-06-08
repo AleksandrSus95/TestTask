@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script src="logIn.js"></script>
+    <title>Style</title>
+    <link rel="stylesheet" type="text/css" href="logIn.css" />
+  </head>
+
+  <body>
+    <div class="bgImage"></div>
+    <svg class="blobCont">
+      <image
+        xlink:href="back1920x1080.png"
+        mask="url(#mask)"
+        width="100%"
+        height="100%"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <defs>
+        <mask id="mask" x="0" y="0">
+          <g style="filter: url(#gooey)">
+            <circle
+              class="blob"
+              cx="10%"
+              cy="10%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="50%"
+              cy="10%"
+              r="40"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="17%"
+              cy="15%"
+              r="70"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="90%"
+              cy="20%"
+              r="120"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="30%"
+              cy="25%"
+              r="30"
+              fill="white"
+              stroke="white"
+            />
+          </g>
+        </mask>
+        <filter id="gooey" height="130%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+        </filter>
+      </defs>
+    </svg>
+    <!-- <h1>Hello world!</h1> -->
+  </body>
 </html>
