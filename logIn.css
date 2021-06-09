@@ -42,13 +42,13 @@ h1 {
   margin-top: 15px;
 }
 /* Validation browser */
-.useBrowser{
-    position: absolute;
-    z-index: 9999;
-    bottom: 0;
-    color: red;
-    font-size: 15pt;
-    margin-left: 10px;
+.useBrowser {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  color: red;
+  font-size: 15pt;
+  margin-left: 10px;
 }
 /* Формы ввода */
 input[type="text"],
@@ -78,9 +78,13 @@ button:hover {
   background-color: rgb(56, 106, 214);
   opacity: 0.9;
 }
-.validData{
-    color: red;
-    margin-top: 0;
+.validDataEmail {
+  color: red;
+  margin-top: 0;
+}
+.validDataPass {
+  color: red;
+  margin-top: 0;
 }
 /* Все нижe для ФОНА */
 body,

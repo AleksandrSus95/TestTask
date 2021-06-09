@@ -12,13 +12,13 @@
 
   <body>
     <div class="allclass">
-      <form class="site-header">
+      <div class="site-header">
         <h1>Авторизация</h1>
         <div class="field">
           <label for="uname"><b>Имя пользователя</b></label>
           <div>
             <input type="text" placeholder="Email" name="uname" required />
-            <p class="validData">Email valid</p>
+            <p class="validDataEmail">Email valid</p>
           </div>
         </div>
 
@@ -33,10 +33,10 @@
             placeholder="Password"
             required
           />
-          <p class="validData">Password Valid</p>
+          <p class="validDataPass">Password Valid</p>
         </div>
         <div class="checBox">
-          <button type="submit">Войти</button>
+          <button class="LogIn-button" type="submit">Войти</button>
           <label>
             <input type="checkbox" checked="checked" name="remember" />
             Запомнить
@@ -45,14 +45,14 @@
         <div class="lostPass">
           <span class="psw"><a href="#">Забыли пароль?</a></span>
         </div>
-      </form>
+      </div>
       <div class="time">
         <div><span id="hours"></span></div>
         <script src="Time.js"></script>
       </div>
     </div>
     <div class="useBrowser">
-        <p>Incorrect browser</p>
+      <p>Incorrect browser</p>
     </div>
     <!-- Все что дальше это картинки и фон -->
     <div class="bgImage"></div>
