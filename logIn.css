@@ -52,24 +52,24 @@ input[type=text], input[type=password] {
     border: 2px solid #2e97fabb;
     border-radius: 5pt;
 } 
-/* Style buttom */
-.checBox{
-    display: grid;
-    grid-column: 1 / 2;
-}
+
 .checBox label{
-    font-size: 20pt;
+    font-size: 15pt;
 }
 button{
-    display: grid;
-    grid-column: 2 / 2;
-    margin-left: 25%;
+    margin-right: 10pt;
     font-size: 20px;
     width: 150px;
     padding: 10px 10px;   
-    border: 2px;
+    border: none;
     border-radius: 3pt;
+    color: white;
+    background-color: #3d98d4;
 }
+button:hover {
+    background-color: rgb(56, 106, 214);
+    opacity: 0.9;
+} 
 /* Все нижe для ФОНА */
 body,
 .bgImage {
@@ -85,7 +85,6 @@ body,
   background-size: cover;
   background-position: top;
   -webkit-filter: grayscale(60%);
-  /* Safari 6.0 - 9.0 */
   filter: grayscale(60%);
   z-index: -1;
 }
