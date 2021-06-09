@@ -11,43 +11,48 @@
   </head>
 
   <body>
-    <form class="site-header">
-    <h1>Войдите</h1>
-    <div class="field">
-       <label for="uname"><b>Имя пользователя</b></label>
-       <div><input type="text" placeholder="Email" name="uname" required />
-       <p class="validData">Email valid</p>
-       </div>
-    </div>
-        
-    <div class="field"></div>
-      <label for="psw"><b>Пароль</b></label>
-      <div><input
-        type="password"
-        id="psw"
-        name="psw"
-        pattern="(?=.*\d)(?=.*[a-zа-яё])(?=.*[A-ZА-ЯЁ])(?=.*[0-9])(?=.*[~!@#$%^&*_|?]).{6,25}"
-        placeholder="Password"
-        required
-      />
-      <p class="validData">Password Valid</p>   
-    </div>
+    <div class="allclass">
+      <form class="site-header">
+        <h1>Авторизация</h1>
+        <div class="field">
+          <label for="uname"><b>Имя пользователя</b></label>
+          <div>
+            <input type="text" placeholder="Email" name="uname" required />
+            <p class="validData">Email valid</p>
+          </div>
+        </div>
 
-    </div>
-    <div class="checBox">
-        <button type="submit">Войти</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" /> Запомнить
-        </label>
-        
-    </div>
-    <div class="lostPass">
-        <span class="psw"><a href="#">Забыли пароль?</a></span>
-    </div>      
-    </form>
-    <div class="time">
+        <div class="field"></div>
+        <label for="psw"><b>Пароль</b></label>
+        <div>
+          <input
+            type="password"
+            id="psw"
+            name="psw"
+            pattern="(?=.*\d)(?=.*[a-zа-яё])(?=.*[A-ZА-ЯЁ])(?=.*[0-9])(?=.*[~!@#$%^&*_|?]).{6,25}"
+            placeholder="Password"
+            required
+          />
+          <p class="validData">Password Valid</p>
+        </div>
+        <div class="checBox">
+          <button type="submit">Войти</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" />
+            Запомнить
+          </label>
+        </div>
+        <div class="lostPass">
+          <span class="psw"><a href="#">Забыли пароль?</a></span>
+        </div>
+      </form>
+      <div class="time">
         <div><span id="hours"></span></div>
-        <script src="Time.js"></script>  
+        <script src="Time.js"></script>
+      </div>
+    </div>
+    <div class="useBrowser">
+        <p>Incorrect browser</p>
     </div>
     <!-- Все что дальше это картинки и фон -->
     <div class="bgImage"></div>
