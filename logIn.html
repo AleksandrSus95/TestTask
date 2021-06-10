@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="logIn.js"></script>
+    <script src="logIn.js" defer></script>
+    <script src="Time.js" defer></script>
     <title>Style</title>
     <link rel="stylesheet" type="text/css" href="logIn.css" />
   </head>
@@ -17,8 +18,8 @@
         <div class="field">
           <label for="uname"><b>Имя пользователя</b></label>
           <div>
-            <input type="text" placeholder="Email" name="uname" required />
-            <p class="validDataEmail">Email valid</p>
+            <input type="text" placeholder="Email" id="getemail" name="uname" required />
+            <p class="validDataEmail"> </p>
           </div>
         </div>
 
@@ -33,10 +34,10 @@
             placeholder="Password"
             required
           />
-          <p class="validDataPass">Password Valid</p>
+          <p class="validDataPass"> </p>
         </div>
         <div class="checBox">
-          <button class="LogIn-button" type="submit">Войти</button>
+          <button class="LogIn-button" type="button">Войти</button>
           <label>
             <input type="checkbox" checked="checked" name="remember" />
             Запомнить
@@ -48,7 +49,6 @@
       </div>
       <div class="time">
         <div><span id="hours"></span></div>
-        <script src="Time.js"></script>
       </div>
     </div>
     <div class="useBrowser">
