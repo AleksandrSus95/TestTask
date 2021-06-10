@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="logIn.js" defer></script>
     <script src="Time.js" defer></script>
+    <script src="useBrowser.js" defer></script>
     <title>Style</title>
     <link rel="stylesheet" type="text/css" href="logIn.css" />
   </head>
@@ -18,8 +19,14 @@
         <div class="field">
           <label for="uname"><b>Имя пользователя</b></label>
           <div>
-            <input type="text" placeholder="Email" id="getemail" name="uname" required />
-            <p class="validDataEmail"> </p>
+            <input
+              type="text"
+              placeholder="Email"
+              id="getemail"
+              name="uname"
+              required
+            />
+            <p class="validDataEmail"></p>
           </div>
         </div>
 
@@ -34,7 +41,7 @@
             placeholder="Password"
             required
           />
-          <p class="validDataPass"> </p>
+          <p class="validDataPass"></p>
         </div>
         <div class="checBox">
           <button class="LogIn-button" type="button">Войти</button>
