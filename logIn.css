@@ -86,6 +86,13 @@ button:hover {
   color: red;
   margin-top: 0;
 }
+.autor {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  right: 10px;
+  color: white;
+}
 /* Все нижe для ФОНА */
 body,
 .bgImage {
