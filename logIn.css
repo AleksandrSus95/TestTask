@@ -104,7 +104,7 @@ body,
 
 .bgImage {
   position: absolute;
-  background-image: url(back1920x1080.png);
+  background-image: url(https://raw.githubusercontent.com/AleksandrSus95/TestTask/master/back1920x1080.png);
   background-size: cover;
   background-position: top;
   -webkit-filter: grayscale(60%);
